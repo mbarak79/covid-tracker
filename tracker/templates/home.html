@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>France Coronavirus Info Live</title>
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/flatly/bootstrap.min.css"
+    />
+  </head>
+
+  <style>
+        @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+        body {
+          background: #f2f2f2;
+          font-family: "Poppins", sans-serif;
+        }
+
+        h3 {
+          font-family: "Poppins", sans-serif;
+        }
+
+        .social-box .box {
+          background: #fff;
+          border-radius: 10px;
+          padding: 40px 10px;
+          margin: 20px 0px;
+          cursor: pointer;
+          transition: all 0.5s ease-out;
+        }
+
+        .social-box .box:hover {
+          box-shadow: 0 0 6px #4183d7;
+        }
+
+        .social-box .box .box-text {
+          margin: 20px 0px;
+          font-size: 15px;
+          line-height: 30px;
+        }
+
+        .social-box .box .box-btn a {
+          text-decoration: none;
+          color: #4183d7;
+          font-size: 16px;
+        }
+
+        .fa {
+          color: #4183d7;
+        }
+
+        .navbar-dark .navbar-brand{
+            color: black;
+        }
+
+        .nav-link a{
+            color: black;
+            }
+
+  </style>
+  <body style="background-color: #f5f0f0;">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark dark">
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="#">Covid-19 Statics</a>
+
+      <!-- Collapse button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#basicExampleNav"
+        aria-controls="basicExampleNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+
+    <div class="container mt-5">
+      <h1>France Covid-19 <span class="text-danger">Live</span> Statics</h1>
+      <div class="social-box">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-xs-12 text-center">
+              <div class="box bg-info">
+                <i class="fa fa-behance fa-3x" aria-hidden="true"></i>
+                <div class="box-title">
+                  <h3>New Cases</h3>
+                </div>
+                <div class="box-text text-center mt-5">
+                  <h1>{{new}}</h1>
+                </div>
+                <div class="box-btn">
+                  <a href="#">Learn More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-xs-12 text-center">
+              <div class="box bg-success">
+                <i class="fa fa-behance fa-3x" aria-hidden="true"></i>
+                <div class="box-title">
+                  <h3>Recovered</h3>
+                </div>
+                <div class="box-text text-center mt-5">
+                  <h1>{{recovered}}</h1>
+                </div>
+                <div class="box-btn">
+                  <a href="#">Learn More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-xs-12 text-center">
+              <div class="box bg-warning">
+                <i class="fa fa-behance fa-3x" aria-hidden="true"></i>
+                <div class="box-title">
+                  <h3>Critical Cases</h3>
+                </div>
+                <div class="box-text text-center mt-5">
+                  <h1>{{critical}}</h1>
+                </div>
+                <div class="box-btn">
+                  <a href="#">Learn More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-xs-12 text-center">
+              <div class="box bg-danger">
+                <i class="fa fa-behance fa-3x" aria-hidden="true"></i>
+                <div class="box-title">
+                  <h3>Deaths</h3>
+                </div>
+                <div class="box-text text-center mt-5">
+                  <h1>{{deaths}}</h1>
+                </div>
+                <div class="box-btn">
+                  <a href="#">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
